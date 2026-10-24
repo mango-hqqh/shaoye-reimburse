@@ -1,0 +1,26 @@
+[
+  {
+    "file": "taobao-order.png",
+    "synthetic": true,
+    "platform": "淘宝",
+    "titleKeywords": ["304", "不锈钢", "内六角", "螺丝"],
+    "title": "304不锈钢内六角螺丝 M4×20 100颗装",
+    "merchant": "鼎固五金旗舰店",
+    "amount": 128.60,
+    "purchaseDate": "2026-10-21",
+    "purchaseTime": "14:30:28",
+    "orderNo": "2398217645086312"
+  },
+  {
+    "file": "jd-order.png",
+    "synthetic": true,
+    "platform": "京东",
+    "titleKeywords": ["罗技", "无线", "蓝牙", "鼠标"],
+    "title": "罗技（Logitech）无线蓝牙鼠标 MX Master 3S 办公静音",
+    "merchant": "罗技京东自营旗舰店",
+    "amount": 599.00,
+    "purchaseDate": "2026-10-22",
+    "purchaseTime": "10:18:45",
+    "orderNo": "284398276510"
+  }
+]

@@ -1,0 +1,33 @@
+node_modules/
+dist/
+release/
+test-results/
+.local-data/
+*.log
+*.tsbuildinfo
+assets/tessdata/*.traineddata.gz
+.npm-cache/
+.electron-cache/
+.builder-cache/
+
+# Local reports and generated reimbursement data
+/验收记录*.json
+ledger.json*
+attachments/
+before-restore-*.json
+报销清单*.csv
+报销材料*.zip
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+.codex/
+.agents/
+.aws/
+*.pem
+*.key
+*.pfx
+*.p12
+*.zip
+*.exe

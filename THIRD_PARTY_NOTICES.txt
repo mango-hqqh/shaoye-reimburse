@@ -1,0 +1,34 @@
+少爷今天报销了吗 1.1.1 — 第三方组件说明
+
+Electron: MIT。随包保留 Electron/Chromium 的 LICENSE 和 LICENSES.chromium.html。
+React / React DOM: MIT，https://github.com/facebook/react
+Lucide: ISC，https://github.com/lucide-icons/lucide
+Guten OCR (@gutenye/ocr-node, ocr-common): MIT，https://github.com/gutenye/ocr
+PP-OCRv4 中文检测、识别模型和 ppocr_keys_v1 字典: Apache-2.0，源自 PaddleOCR，https://github.com/PaddlePaddle/PaddleOCR。
+模型以 @gutenye/ocr-models 1.4.2 中的 ONNX 格式分发；模型权重和字典的许可独立于 Guten OCR 代码的 MIT 许可。
+ONNX Runtime: MIT，https://github.com/microsoft/onnxruntime
+Sharp: Apache-2.0；libvips: LGPL-2.1-or-later，许可保留在 @img/sharp-win32-x64 等包的 LICENSE 文件中。https://sharp.pixelplumbing.com/
+OpenCV.js: Apache-2.0，https://github.com/opencv/opencv
+Tesseract.js / Tesseract.js-core: Apache-2.0，https://github.com/naptha/tesseract.js
+OCR traineddata: Tesseract Apache-2.0，https://github.com/tesseract-ocr/tessdata
+
+PDF.js (pdfjs-dist 6.4.299): Apache-2.0，https://github.com/mozilla/pdf.js
+  主许可见 pdfjs-dist/LICENSE。随包字体、字符映射和解码组件另有各自许可：
+  - cmaps/LICENSE：Adobe 字符映射的 BSD 三条款许可。
+  - standard_fonts/LICENSE_FOXIT：PDFium 字体的 BSD 三条款许可。
+  - standard_fonts/LICENSE_LIBERATION：Liberation 字体的 GPLv2 与文件中列出的字体例外条款。
+  - iccs/LICENSE：CC0 1.0 Universal。
+  - wasm/LICENSE_OPENJPEG、LICENSE_JBIG2、LICENSE_QCMS 及 LICENSE_PDFJS_*：相应图像解码、色彩管理组件和 PDF.js 集成代码的独立许可，完整文本随这些文件保留。
+@napi-rs/canvas 1.0.13: MIT，https://github.com/Brooooooklyn/canvas
+  Windows 原生包 @napi-rs/canvas-win32-x64-msvc 1.0.13 的 package.json 同样标明 MIT。
+  @napi-rs/canvas/LICENSE 还包含随组件分发的 Chromium broken-image 图标的 BSD 三条款声明；该完整文件一并保留。
+  原生包内 sbom.cdx.json 记录其第三方组件信息。
+yazl 3.3.1: MIT，Copyright (c) 2014 Josh Wolfe，https://github.com/thejoshwolfe/yazl
+buffer-crc32 1.0.0: MIT，Copyright (c) 2013-2024 Brian J. Brennan，https://github.com/brianloveswords/buffer-crc32
+yauzl 3.4.0: MIT，Copyright (c) 2014 Josh Wolfe，https://github.com/thejoshwolfe/yauzl （仅开发测试，用于核验生成的 ZIP）。
+
+以上新增组件的版本和许可依据本地安装包的 package.json 与 LICENSE 文件核对。
+各组件完整许可保留在 node_modules 相应组件目录。运行时组件的许可同时随 release/1.1.1/win-unpacked/resources/app.asar.unpacked/node_modules 分发；安装版位于安装目录的 resources/app.asar.unpacked/node_modules。仅开发测试组件保留在源项目的 node_modules 中。
+模型下载来源：https://tessdata.projectnaptha.com/4.0.0/（chi_sim、eng）。完整 Apache 2.0 许可另附在 tessdata/LICENSE.txt。
+PP-OCR 模型来源与校验和：https://github.com/gutenye/ocr/blob/main/packages/models/assets.json。
+Guten OCR 与 PaddleOCR 完整许可另附在 ocr-notices/ 目录。
